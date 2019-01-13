@@ -5,13 +5,13 @@
 * Clone repo or copy the one simple file, main.tf to local folder.
 
 * Install Terraform
-Download and extract to a location such as /usr/local/bin
-REF: https://learn.hashicorp.com/terraform/getting-started/install.html
+  * Download and extract to a location such as /usr/local/bin
+  * REF: https://learn.hashicorp.com/terraform/getting-started/install.html
 
 * Install Azure CLI
-brew update && brew install azure-cli
-az login
-REF: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest
+  * brew update && brew install azure-cli
+  * az login
+  * REF: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest
 
 * CD to folder with main.tf
 
