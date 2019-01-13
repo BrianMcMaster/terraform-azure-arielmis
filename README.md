@@ -42,6 +42,44 @@ https://www.terraform.io/docs/commands/index.html
 * `terraform destroy` - Destroy plan, then prompts the user before performing a terraform destroy
 * `terraform import`  - Import a resource to be managed by Terraform.
 
+## Common commands:
+  * https://www.terraform.io/docs/commands/index.html
+*    `apply`              Builds or changes infrastructure
+*    `console`            Interactive console for Terraform interpolations
+*    `destroy`            Destroy Terraform-managed infrastructure
+  * https://www.terraform.io/intro/getting-started/destroy.html
+*    `fmt`                Rewrites config files to canonical format
+*    `get`                Download and install modules for the configuration
+*    `graph`              Create a visual graph of Terraform resources
+*    `import`             Import existing infrastructure into Terraform
+*    `init`               Initialize a new or existing Terraform configuration
+*    `output`             Read an output from a state file
+*    `plan`               Generate and show an execution plan
+*    `providers`          Prints a tree of the providers used in the configuration
+*    `push`               Upload this Terraform module to Terraform Enterprise to run
+*    `refresh`            Update local state file against real resources
+*    `show`               Inspect Terraform state or plan
+*    `taint`              Manually mark a resource for recreation
+*    `untaint`            Manually unmark a resource as tainted
+*    `validate`           Validates the Terraform files
+*    `version`            Prints the Terraform version
+*    `workspace`          Workspace management
+
+### All other commands:
+*    `debug`              Debug output management (experimental)
+*    `force-unlock`       Manually unlock the terraform state
+*    `state`              Advanced state management
+
+### Other common examples:
+  * `terraform help`
+  * `terraform get -update` - Download or update modules
+  * `terraform init -upgrade` - Upgrades the provider.
+  * `terraform import vsphere_virtual_machine.tf_windowsimport /den-1a.us.sans.org/vm/tf_windowsimport`
+  * `terraform import module.p-4-s3-pac-1a.aws_s3_bucket.a p-4-s3-pac-1a`
+  * `terraform plan -var-file=./terraform.tfvars`
+  * `terraform apply -state=./terraform.tfstate -var-file=./terraform.tfvars`
+  * `terraform destroy -state=./terraform.tfstate -var-file=./terraform.tfvars`
+  
 ## Basic instruction examples
 1. cd `{terraform_provider}/{environment}/{function}`
 2. run command `terraform init`
