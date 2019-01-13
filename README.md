@@ -1,9 +1,11 @@
 # terraform-azure-arielmis
 
-* Download main.tf to local folder.
+## Full working example of a Windows RDP VM with networking.
+
+* Clone repo or copy the one simple file, main.tf to local folder.
 
 * Install Terraform
-Download and install Terraform
+Download and extract to a location such as /usr/local/bin
 REF: https://learn.hashicorp.com/terraform/getting-started/install.html
 
 * Install Azure CLI
@@ -13,11 +15,13 @@ REF: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azu
 
 * CD to folder with main.tf
 
+* Add username and password to the default variables.
+
 * `terraform init`
-This will load the Azure provider and create terraform state file.
+This will load the Azure provider and create the Terraform state file.
 
 * `terraform apply`
-This will create the resources on Azure
+This will create the all resources on Azure
 
 * `terraform destroy`
 This will destroy all the resources on Azure
@@ -28,9 +32,8 @@ This will destroy all the resources on Azure
 What is Terraform?
 https://www.terraform.io/intro/index.html
 
-## Terrafrom Providers
-https://www.terraform.io/docs/providers/vsphere/index.html
-https://www.terraform.io/docs/providers/aws/
+## Terraform Providers
+https://www.terraform.io/docs/providers/azurerm/index.html
 
 ## Core commands
 https://www.terraform.io/docs/commands/index.html
@@ -56,4 +59,3 @@ https://www.terraform.io/docs/commands/index.html
 * `outputs.tf` - Output variables provide a means to support Terraform end-user queries. This allows users to extract meaningful data from among the potentially massive amount of data associated with a complex infrastructure.
 * `data.tf` - Data sources represent read-only views of existing infrastructure intended for semantic use in Terraform configurations.
 * `terraform.tfstate` - These are the state files or flat database used by Terraform. Care should be taken to consider locking issues (by default, these files are not locked to prevent sharing) and if these files are lost the infrastructure continues to run but will not longer be managed by Terraform. TFSTATE file per environment and should be stored in AWS or Terraform Enterprise. Before progressing, it is also very important to understand https://www.terraform.io/docs/state/index.html, how it is fits in and the criticality of state file management.
-
