@@ -1,30 +1,29 @@
 # terraform-azure-arielmis
 
-## Download main.tf to local folder.
+* Download main.tf to local folder.
 
-## Install Terraform
+*Install Terraform
 Download and install Terraform
 REF: https://learn.hashicorp.com/terraform/getting-started/install.html
 
-## Install Azure CLI
+*Install Azure CLI
 brew update && brew install azure-cli
 az login
 REF: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest
 
-## CD to folder with main.tf
+*CD to folder with main.tf
 
-## `terraform init`
+* `terraform init`
 This will load the Azure provider and create terraform state file.
 
-## `terraform apply`
+* `terraform apply`
 This will create the resources on Azure
 
-## `terraform destroy`
+* `terraform destroy`
 This will destroy all the resources on Azure
 
 
 
-## Additional info
 ## Terraform
 What is Terraform?
 https://www.terraform.io/intro/index.html
