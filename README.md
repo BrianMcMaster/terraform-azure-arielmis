@@ -1,6 +1,6 @@
 # terraform-azure-arielmis
 
-## Full working example of a Windows RDP VM with networking.
+## Working example of a Windows RDP VM with networking on Azure.
 
 * Clone repo or copy the one simple file, main.tf to local folder.
 
