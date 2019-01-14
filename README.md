@@ -11,14 +11,14 @@
 ## Install Azure CLI
 * `brew update && brew install azure-cli`
 * az login
-REF: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest
+* REF: https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-macos?view=azure-cli-latest
 
 ## CD to the folder with main.tf
 * Edit main.tf and add username and password to the default variables.
 * Run `terraform init` from the same directory.
 This will load the Azure provider and create the Terraform state file.
 * `terraform apply`
-This will create the all resources on Azure
+This will create all the resources on Azure
 * `terraform destroy`
 This will destroy all the resources on Azure
 
